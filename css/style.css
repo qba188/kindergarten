@@ -1,0 +1,407 @@
+body {
+
+    margin: 0;
+    color: #000000;
+    font-family: 'Caveat Brus', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    letter-spacing: 0.5px;
+    background-image: url(../img/clouds.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*HEADER*/
+a.navbar-brand img{
+  width: 8em;
+}
+.navbar{
+  margin: 10px;
+  border-radius: 40px;
+}
+.navbar-toggler {
+  color: $navbar-light-color;
+  border-color: black;
+}
+.textP{
+  text-align: center;
+  padding: 2em;
+}
+.bcg{
+  height: 100vh;
+	background-image: url(../img/sky.png);
+  background-size: cover;
+  background-position: center;
+}
+.bcgSecond{
+  height: 100vh;
+  background-image: url(../img/kinderG.png);
+  background-size: cover;
+  background-position: center;
+}
+.clouds{
+
+}
+.pen{
+  background-image: url(../img/pen.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+@media only screen and (max-width : 728px)
+ {
+.rec{
+   background-image: url(../img/kidsSmall.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+}
+
+.main-content{
+  padding: 10%;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+.btext{
+  text-align: center;
+  padding-bottom: 1em;
+  font-size: 2em;
+}
+.mheight{
+  height: 100vh;
+}
+.aboutUs {
+  width: 300px;
+  height: 400px;
+  border-radius: 0.25rem;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+.center{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 2000px) {
+  .center {
+    font-size: xx-large;
+  }
+}
+.img-center{
+  width: 100%;
+  max-width: 398px;
+  padding: 1.6em;
+  display: block;
+  margin: 0 auto;
+  max-height: 500px;
+}
+.img-aboutUs {
+  height: 100%;
+  width: 100%;
+  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(0deg);
+  transition: transform 0.8s ease-in-out;
+  backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
+
+}
+
+.img-aboutUs img {
+      padding: 1rem 0;
+      margin: 0;
+      height: 220px;
+      min-width: 180px;
+  }
+
+
+.description {
+  position: absolute;
+
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(180deg);
+  transition: transform 0.8s ease-in-out;
+  backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
+}
+
+.aboutUs:hover > .description {
+  transform: translate(-50%, -50%) rotateY(0deg)
+}
+
+.aboutUs:hover > .img-aboutUs {
+  transform: translate(-50%, -50%) rotateY(-180deg)
+}
+
+.about {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+.bar{
+  margin: 25px 0 75px 0;
+  width: 70%;
+  height: 4px;
+  background: #9d9fa2;
+}
+.row.main-content i{
+  background-color: rgb(255, 255, 255);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 38px;
+  margin: 0px 10px;
+}
+@media (max-width: 768px) {
+  .row.main-content i{
+    margin: 0px 0px;
+  }
+}
+.main-content.row a{
+  text-decoration: none;
+  color: black;
+}
+.gallery-on{
+  height: 600px;
+  background-image: url(../img/gallery.svg);
+  background-size: cover;
+  transition: background-color 2s;
+}
+.gallery-on a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
+}
+.gallery-on a:hover {
+  background-color: rgba(165, 171, 171, 0.41)
+}
+.parallaxContainer{
+  position: relative;
+  background-image: url(../img/pen.svg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.parallaxContainer2{
+    background-image: url(../img/kidss.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+/*FORM*/
+* {
+    box-sizing: border-box;
+}
+.form {
+    margin:3rem auto;
+    font-family:sans-serif;
+    max-width:40rem;
+}
+.form .form-row {
+    margin-bottom:1rem;
+}
+.form .form-row:last-child {
+    margin-bottom: 0;
+}
+.form input[type=text],
+.form input[type=email],
+.form textarea,
+.form .checkbox-cnt .state {
+    box-shadow:inset 0 1px 5px rgba(0,0,0,0.07);
+}
+.form input[type=text],
+.form input[type=email],
+.form textarea {
+    border-radius:0.2rem;
+    font-family:sans-serif;
+    padding:0.8rem;
+    border:1px solid #aaa;
+    display: block;
+    width:100%;
+    color:#666;
+}
+.form input[type=text]:focus,
+.form input[type=email]:focus,
+.form textarea:focus {
+    border-color:#9DC9F5;
+    box-shadow:inset 0 0 0 1px #9DC9F5, inset 0 1px 5px rgba(0,0,0,0.07);
+    outline:none;
+}
+.form textarea {
+    height:10rem;
+}
+.form label {
+    font-weight:bold;
+    display: block;
+    font-size:0.9rem;
+    margin-bottom:0.5rem;
+}
+.form .submit-btn {
+    font-family: sans-serif;
+    padding:1rem 2rem;
+    background: #F15C5C;
+    border:0;
+    border-radius:0.2rem;
+    color:#fff;
+    font-size:1.1rem;
+    font-weight: bold;
+    transition: 0.3s background-color;
+    cursor: pointer;
+}
+.form .submit-btn:hover {
+    background: #A60E0E;
+}
+.form .checkbox-cnt {
+    padding-left:3rem;
+    position: relative;
+    font-weight: normal;
+    font-size:0.85rem;
+    line-height: 1.1rem;
+    color:#444;
+    cursor: pointer;
+}
+.form .checkbox-cnt .state {
+    width:2rem;
+    height: 2rem;
+    display: block;
+    position: absolute;
+    left:0;
+    top:0;
+    border:1px solid #aaa;
+    border-radius:0.2rem;
+}
+.form .checkbox-cnt .state:before {
+    width:1rem;
+    height: 1rem;
+    border-radius:0.2rem;
+    background: #F15C5C;
+    display: block;
+    position: absolute;
+    left:50%;
+    top:50%;
+    content:'';
+    transform:translate(-50%, -50%) scale(1);
+    opacity:0;
+}
+.form .checkbox-cnt input:checked ~ .state:before {
+    animation: checkboxShowAnim 0.5s 1;
+    opacity: 1;
+}
+.form .checkbox-cnt input {
+    position:absolute;
+    top:0; left:0;
+    width:2rem;
+    height: 2rem;
+    z-index: 2;
+    cursor:pointer;
+    padding:0;
+    margin:0;
+    opacity: 0;
+}
+.form input[type=text].error,
+.form input[type=email].error,
+.form textarea.error,
+.form .checkbox-cnt input.error ~ .state {
+    border-color:#E01546;
+}
+.field-error {
+    color:#E01546;
+    padding:0.5rem 0;
+    font-size:0.8rem;
+}
+@keyframes checkboxShowAnim {
+    0%  { border-radius:50%; transform:translate(-50%, -50%) scale(0.2); }
+    50% { transform:translate(-50%, -50%) scale(1.2); }
+    100% { transform:translate(-50%, -50%) scale(1); }
+}
+
+.element-is-busy {
+    position: relative;
+    pointer-events: none;
+    opacity:0.5;
+}
+.element-is-busy::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-right-color: rgba(0,0,0,0.7);
+    transform: translate(-50%, -50%) rotate(0deg);
+    content:'';
+    animation: rotateSingleLoading 0.3s infinite linear;
+    z-index: 100;
+}
+@keyframes rotateSingleLoading {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+.form .send-error {
+    display:inline-block;
+    font-family: sans-serif;
+    font-size:0.9rem;
+    padding:1rem 1.5rem;
+    color:#E01546;
+}
+.form-send-success {
+    font-family: sans-serif;
+    text-align:center;
+    font-size:2rem;
+    font-weight:bold;
+    border:1px solid #eee;
+    color:#333;
+    padding:10rem 0;
+    margin:3rem auto;
+    max-width:40rem;
+}
+.form-send-success strong {
+    display:block;
+    margin-bottom:0.5rem;
+}
+.form-send-success span {
+    font-size:1rem;
+    color:#888;
+    font-weight:normal;
+    display: block;
+}
+@media screen and (max-width:500px) {
+    .form .submit-btn {
+        display: block;
+        width: 100%;
+    }
+    .form .send-error {
+        text-align:center;
+        display: block;
+    }
+}
