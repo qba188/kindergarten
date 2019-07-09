@@ -210,8 +210,10 @@ a.navbar-brand img{
     background-attachment: fixed;
     background-size: cover;
 }
-
-
+#contact{
+    margin-right: 0px;
+    margin-left: 0px;
+}
 
 /*FORM*/
 * {
