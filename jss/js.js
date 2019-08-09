@@ -34,29 +34,12 @@ $(function(){
  });
 //ANIMATIONS
 AOS.init();
-$( document ).ready(function() {
-    $(".parallaxContainer").mkParallax();
-    $(".parallaxContainer2").mkParallax();
-});
-
-//GALLERY
-window.onload = function() {
-    baguetteBox.run('.baguetteBoxOne');
-
-    if (typeof oldIE === 'undefined' && Object.keys) {
-        hljs.initHighlighting();
-    }
-
-    var year = document.getElementById('year');
-    year.innerText = new Date().getFullYear();
-};
 
 //FORM
 {
     const form = document.querySelector('#contactForm');
     const inputs = form.querySelectorAll('input[required], textarea[required], select[required]');
 
-    //wyłączamy domyślną walidację
     form.setAttribute('novalidate', true);
 
     const displayFieldError = function(elem) {
@@ -103,8 +86,6 @@ window.onload = function() {
     });
 
     const checkFieldsErrors = function(elements) {
-        //ustawiamy zmienną na true. Następnie robimy pętlę po wszystkich polach
-        //jeżeli któreś z pól jest błędne, przełączamy zmienną na false.
         let fieldsAreValid = true;
 
         [...elements].forEach(elem => {
@@ -123,8 +104,6 @@ window.onload = function() {
 
     form.addEventListener('submit', function(e) {
         e.preventDefault();
-
-        //jeżeli wszystkie pola są poprawne...
         if (checkFieldsErrors(inputs)) {
             const elements = form.querySelectorAll('input:not(:disabled), textarea:not(:disabled), select:not(:disabled)');
 
@@ -156,7 +135,6 @@ window.onload = function() {
 
                 } else {
                     if (ret.status === 'ok') {
-                        //wyświetlamy komunikat powodzenia, cieszymy sie
                         const div = document.createElement('div');
                         div.classList.add('form-send-success');
 
@@ -166,7 +144,6 @@ window.onload = function() {
                     }
 
                     if (ret.status === 'error') {
-                        //komunikat błędu, niepowodzenia
                         const div = document.createElement('div');
                         div.classList.add('send-error');
                         div.innerText = 'Wysłanie wiadomości się nie powiodło';

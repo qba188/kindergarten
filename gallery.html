@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href='http://fonts.googleapis.com/css?family=Caveat+Brush&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/gallery.css">
 		<link rel="stylesheet" href="css/baguetteBox.css">
@@ -87,13 +86,9 @@
 						</a>
 				</div>
 		</article>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script src="https://kit.fontawesome.com/9c2eec3dae.js"></script>
-    <script src="jss/jquery.mkParallax.js"></script>
 		<script src="jss/baguetteBox.js" async></script>
 		<script src="jss/highlight.min.js" async></script>
-		<script src="jss/icon.js"></script>
-		<script src="jss/js.js"></script>
     <script>
     window.onload = function() {
         baguetteBox.run('.baguetteBoxOne');
@@ -101,9 +96,7 @@
         if (typeof oldIE === 'undefined' && Object.keys) {
             hljs.initHighlighting();
         }
-
-        var year = document.getElementById('year');
-        year.innerText = new Date().getFullYear();
-    };</script>
+    };
+    </script>
   </body>
   </html>
